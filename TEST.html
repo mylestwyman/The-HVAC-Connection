@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The HVAC Connection | HVAC Services in Dallas, GA</title>
+  <meta name="description" content="The HVAC Connection is a trusted local HVAC company in Dallas, GA offering heating, cooling, maintenance, and replacement services. Call (678) 600-0004 today." />
+  <meta name="keywords" content="HVAC Dallas GA, HVAC company Dallas GA, AC repair Dallas GA, heating repair Dallas GA, HVAC service Dallas Georgia, air conditioning repair near me" />
+  <meta name="author" content="The HVAC Connection" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="The HVAC Connection | Dallas, GA HVAC Services" />
+  <meta property="og:description" content="Reliable heating and cooling services in Dallas, Georgia. Call The HVAC Connection at (678) 600-0004." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --navy: #081f3a;
+      --blue: #0b5ed7;
+      --ice: #eaf6ff;
+      --orange: #ff7a1a;
+      --dark: #101827;
+      --gray: #5b6472;
+      --white: #ffffff;
+      --soft: #f6f9fc;
+      --shadow: 0 18px 45px rgba(8,31,58,.14);
+      --radius: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    .top-strip {
+      background: var(--navy);
+      color: white;
+      font-size: .92rem;
+      padding: .55rem 0;
+    }
+
+    .top-strip .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(10px);
+      z-index: 20;
+      border-bottom: 1px solid rgba(8,31,58,.08);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      font-weight: 900;
+      color: var(--navy);
+      font-size: 1.35rem;
+      letter-spacing: -.03em;
+    }
+
+    .mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--blue), var(--orange));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.4rem;
+      font-weight: 700;
+      font-size: .95rem;
+      color: var(--navy);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .call {
+      background: var(--orange);
+      color: white;
+      padding: .85rem 1.1rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 900;
+      box-shadow: 0 12px 25px rgba(255,122,26,.26);
+      white-space: nowrap;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(255,122,26,.28), transparent 26%),
+        radial-gradient(circle at 20% 30%, rgba(11,94,215,.35), transparent 30%),
+        linear-gradient(135deg, #07182d 0%, #0b315f 58%, #07182d 100%);
+      color: white;
+      padding: 6.5rem 0 5rem;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -90px;
+      bottom: -90px;
+      width: 420px;
+      height: 420px;
+      border: 50px solid rgba(255,255,255,.08);
+      border-radius: 50%;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.22);
+      padding: .55rem .85rem;
+      border-radius: 999px;
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: .96;
+      letter-spacing: -.07em;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero p {
+      font-size: 1.16rem;
+      max-width: 650px;
+      color: rgba(255,255,255,.88);
+      margin-bottom: 2rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 1.25rem;
+      border-radius: 14px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--orange);
+      color: white;
+    }
+
+    .btn-light {
+      background: white;
+      color: var(--navy);
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      padding: 1.6rem;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card strong {
+      font-size: 3rem;
+      display: block;
+      line-height: 1;
+    }
+
+    .hero-card span {
+      color: rgba(255,255,255,.82);
+    }
+
+    .mini-list {
+      margin-top: 1.3rem;
+      display: grid;
+      gap: .85rem;
+    }
+
+    .mini-list div {
+      background: rgba(255,255,255,.1);
+      padding: .9rem;
+      border-radius: 14px;
+      font-weight: 800;
+    }
+
+    .trust {
+      margin-top: -2rem;
+      position: relative;
+      z-index: 3;
+    }
+
+    .trust-grid {
+      background: white;
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow: hidden;
+    }
+
+    .trust-item {
+      padding: 1.35rem;
+      border-right: 1px solid #edf1f7;
+      text-align: center;
+      font-weight: 900;
+      color: var(--navy);
+    }
+
+    .trust-item:last-child {
+      border-right: 0;
+    }
+
+    section {
+      padding: 5rem 0;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 3rem;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .78rem;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.05;
+      letter-spacing: -.05em;
+      margin: .5rem 0 1rem;
+    }
+
+    .section-head p, .about p, .service-card p, .faq p {
+      color: var(--gray);
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .service-card {
+      border: 1px solid #e8eef7;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      background: white;
+      box-shadow: 0 10px 30px rgba(8,31,58,.06);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--ice);
+      display: grid;
+      place-items: center;
+      font-size: 1.45rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      color: var(--navy);
+      margin-bottom: .55rem;
+      font-size: 1.18rem;
+    }
+
+    .about {
+      background: var(--soft);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .feature-box {
+      background: white;
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: .9rem;
+    }
+
+    .feature {
+      display: flex;
+      gap: .85rem;
+      align-items: flex-start;
+      padding: 1rem;
+      background: var(--soft);
+      border-radius: 16px;
+    }
+
+    .feature b {
+      color: var(--navy);
+    }
+
+    .location {
+      background: linear-gradient(135deg, var(--navy), #103f78);
+      color: white;
+    }
+
+    .location h2,
+    .location .eyebrow {
+      color: white;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.4rem;
+    }
+
+    .info-card {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+    }
+
+    .info-card h3 {
+      margin-bottom: .75rem;
+      font-size: 1.3rem;
+    }
+
+    .hours {
+      display: grid;
+      gap: .45rem;
+    }
+
+    .hours div {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,.14);
+      padding-bottom: .45rem;
+    }
+
+    .faq {
+      background: white;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .faq-item {
+      border: 1px solid #e8eef7;
+      border-radius: 18px;
+      padding: 1.2rem;
+    }
+
+    .faq-item h3 {
+      color: var(--navy);
+      margin-bottom: .4rem;
+    }
+
+    .cta {
+      background: var(--orange);
+      color: white;
+      padding: 3.5rem 0;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 1.5rem;
+      color: rgba(255,255,255,.92);
+    }
+
+    footer {
+      background: #061423;
+      color: rgba(255,255,255,.82);
+      padding: 2rem 0;
+      text-align: center;
+      font-size: .95rem;
+    }
+
+    .mobile-sticky-call {
+      display: none;
+      position: fixed;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 50;
+      background: var(--orange);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 999px;
+      font-weight: 900;
+      text-decoration: none;
+      box-shadow: 0 16px 35px rgba(0,0,0,.25);
+    }
+
+    @media (max-width: 850px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services,
+      .faq-grid,
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-item {
+        border-right: 0;
+        border-bottom: 1px solid #edf1f7;
+      }
+
+      .trust-item:last-child {
+        border-bottom: 0;
+      }
+
+      .hero {
+        padding: 4.5rem 0 4rem;
+      }
+
+      .mobile-sticky-call {
+        display: block;
+      }
+
+      body {
+        padding-bottom: 4.5rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "The HVAC Connection",
+    "telephone": "+1-678-600-0004",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4075 Marietta Hwy Ste 100",
+      "addressLocality": "Dallas",
+      "addressRegion": "GA",
+      "postalCode": "30157",
+      "addressCountry": "US"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "58"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "15:00"
+      }
+    ],
+    "areaServed": ["Dallas GA", "Hiram GA", "Acworth GA", "Powder Springs GA", "Marietta GA"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="top-strip">
+    <div class="container">
+      <span>4075 Marietta Hwy Ste 100, Dallas, GA 30157</span>
+      <span>Mon-Fri 8AM-5PM · Sat 10AM-3PM · Sun Closed</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="mark">HC</div>
+        <span>The HVAC Connection</span>
+      </div>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#location">Contact</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="call" href="tel:16786000004">Call (678) 600-0004</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">⭐ 5.0 Rating from 58 Reviews</div>
+          <h1>Reliable HVAC service without the runaround.</h1>
+          <p>
+            The HVAC Connection helps Dallas, GA homeowners and businesses stay comfortable with dependable heating, cooling, maintenance, and replacement services.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:16786000004">Call Now</a>
+            <a class="btn btn-light" href="#location">Get Directions</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Business highlights">
+          <strong>5.0</strong>
+          <span>Local customer rating</span>
+
+          <div class="mini-list">
+            <div>Fast scheduling</div>
+            <div>Heating & cooling help</div>
+            <div>Local Dallas, GA service</div>
+            <div>Clear communication</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="trust">
+      <div class="container trust-grid">
+        <div class="trust-item">Local HVAC Team</div>
+        <div class="trust-item">58+ Reviews</div>
+        <div class="trust-item">5-Star Reputation</div>
+        <div class="trust-item">Easy Contact</div>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Heating & Cooling</div>
+          <h2>HVAC services built around comfort, speed, and trust.</h2>
+          <p>
+            From quick repairs to full system replacements, this one-page site is designed to turn visitors into phone calls.
+          </p>
+        </div>
+
+        <div class="services">
+          <div class="service-card">
+            <div class="icon">❄️</div>
+            <h3>AC Repair</h3>
+            <p>Cooling system diagnostics and repairs for homes and businesses in the Dallas, GA area.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🔥</div>
+            <h3>Heating Service</h3>
+            <p>Furnace and heating system service to keep your property warm when temperatures drop.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🛠️</div>
+            <h3>HVAC Maintenance</h3>
+            <p>Preventive tune-ups that help improve efficiency, comfort, and system lifespan.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">⚡</div>
+            <h3>System Replacement</h3>
+            <p>Upgrade old equipment with a more efficient system designed for reliable comfort.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🌬️</div>
+            <h3>Indoor Air Quality</h3>
+            <p>Cleaner indoor air solutions for better comfort throughout your home or business.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🏢</div>
+            <h3>Residential & Commercial</h3>
+            <p>Local HVAC support for houses, offices, storefronts, and light commercial spaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="why-us">
+      <div class="container about-grid">
+        <div>
+          <div class="eyebrow">Why choose us</div>
+          <h2>A local HVAC company that makes contacting easy.</h2>
+          <p>
+            This page is built for speed and conversion: no bloated frameworks, no unnecessary scripts, clear calls to action, local SEO structure, and helpful service content.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature">
+            <span>✅</span>
+            <div><b>Speed optimized</b><br>Single-file HTML and CSS for fast loading.</div>
+          </div>
+
+          <div class="feature">
+            <span>📍</span>
+            <div><b>Local SEO ready</b><br>Dallas, GA location details and HVAC structured data.</div>
+          </div>
+
+          <div class="feature">
+            <span>📞</span>
+            <div><b>Contact focused</b><br>Click-to-call buttons and a sticky mobile call button.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="location">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Contact The HVAC Connection</div>
+          <h2>Call, visit, or get directions.</h2>
+        </div>
+
+        <div class="location-grid">
+          <div class="info-card">
+            <h3>Business Info</h3>
+            <p><strong>Phone:</strong> <a href="tel:16786000004">(678) 600-0004</a></p>
+            <p><strong>Address:</strong><br>4075 Marietta Hwy Ste 100<br>Dallas, GA 30157</p>
+            <p><strong>Located in:</strong> Citizens Square Shopping Center</p>
+            <br>
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=4075+Marietta+Hwy+Ste+100+Dallas+GA+30157" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+
+          <div class="info-card">
+            <h3>Hours</h3>
+            <div class="hours">
+              <div><span>Monday</span><strong>8 AM - 5 PM</strong></div>
+              <div><span>Tuesday</span><strong>8 AM - 5 PM</strong></div>
+              <div><span>Wednesday</span><strong>8 AM - 5 PM</strong></div>
+              <div><span>Thursday</span><strong>8 AM - 5 PM</strong></div>
+              <div><span>Friday</span><strong>8 AM - 5 PM</strong></div>
+              <div><span>Saturday</span><strong>10 AM - 3 PM</strong></div>
+              <div><span>Sunday</span><strong>Closed</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Helpful Answers</div>
+          <h2>HVAC questions people search before they call.</h2>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Do you service Dallas, GA?</h3>
+            <p>Yes. The HVAC Connection is located in Dallas, Georgia and serves local heating and cooling needs.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I call from my phone?</h3>
+            <p>Yes. Tap any call button on this page to call (678) 600-0004 directly.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What makes this site fast?</h3>
+            <p>It uses simple HTML and CSS without heavy frameworks, which helps load quickly on mobile and desktop.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Is this optimized for SEO?</h3>
+            <p>Yes. It includes local keywords, clear headings, metadata, and HVACBusiness structured data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Need heating or cooling help?</h2>
+        <p>Call The HVAC Connection today and make comfort simple.</p>
+        <a class="btn btn-light" href="tel:16786000004">Call (678) 600-0004</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 The HVAC Connection. All rights reserved.</p>
+      <p>4075 Marietta Hwy Ste 100, Dallas, GA 30157 · (678) 600-0004</p>
+    </div>
+  </footer>
+
+  <a class="mobile-sticky-call" href="tel:16786000004">Tap to Call The HVAC Connection</a>
+
+</body>
+</html>
